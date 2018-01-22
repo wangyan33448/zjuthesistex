@@ -3,6 +3,11 @@ Tex templates for Zhejiang University Thesis
 
 从[google code](https://code.google.com/archive/p/zjuthesistex)中抢救过来，原文件和相关文档在**downloads** ，原[wiki](ProjectHome.md)也从另一个branch中拷了过来。
 
+## How to use
+一般情况下，环境已经配好的情况下，修改[论文模版示例.tex](utfver/论文模版示例.tex)和[Chapters](utfver/Chapters)中的对应章节，引用添加在[thesisbib.bib](utfver/thesisbib.bib)，然后在[utfver](utfver)目录中运行`make`，就可以编出来 **论文模版示例.tex**。
+
+详细请参考[论文LaTeX版本快速指南V2.0.1.pdf](utfver/论文LaTeX版本快速指南V2.0.1.pdf).
+
 ## 相关链接
 以下链接可能需要浙大内网访问。现在（2018年1月）貌似还是最新版。因为我主要用来写博士论文，所以只关注了研究生的相关规定。
 
