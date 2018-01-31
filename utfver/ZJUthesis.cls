@@ -3,12 +3,12 @@
 %% 王东举于2013年撰写博士论文期间，根据上一版本反馈意见，对其进行增补修订。
 %% 该模板修订部分，主要是出现了两个版本
 %% GBK版本和UTF-8版本
-%% 
+%%
 %% 本模版是在88TeX版提供的数学系毕业论文模版2006年版基础上
 %% 由王东举于2011年9-10月间修改出第一版，欢迎提出修改意见，欢迎在此基础上自行修改尝试
 %% 邮箱：shuwei1204@163.com
-%% 
-%% 
+%%
+%%
 %% 提供该模版的运行基础
 \NeedsTeXFormat{LaTeX2e}[1995/12/01]
 % 版本说明
@@ -42,7 +42,7 @@
 % 设置图片，表格头字体选项。间距10pt，字号为小字号，加粗字体，标题与题目间距1个字符
 \RequirePackage[margin=10pt,font={small,bf},labelsep=quad]{caption}
 % 粗线型表格需要的扩展包
-\RequirePackage{booktabs-de}
+%\RequirePackage{booktabs-de}
 % 计算宽度使用的包
 \RequirePackage{calc}
 % 合并表格行用到的包
@@ -109,7 +109,7 @@ includehead, includefoot]{geometry}
 % 设置英文字体为Times New Roman
 \setmainfont{Times New Roman}
 
-\newcommand\ZJUspace{\protect\CTEX@spaceChar\protect\CTEX@spaceChar}
+\newcommand\ZJUspace{\protect\quad\protect\quad}
 \def\reserved@a#1 #2 #3\@nil{%
   \def\ZJUfiledate{#1}%
   \def\ZJUfileversion{#2}%
@@ -245,36 +245,36 @@ includehead, includefoot]{geometry}
         \includegraphics[width=22.8mm]{./CoverPagepic/QSY.eps}    \\
       \fi
     \end{center}
- 
+
       \vspace{2mm}
 
     \begin{center}
       % 论文题目部分内容，可以修改
       \begin{tabular}{rl}
-        {\bfseries\fangsong\zihao{3}\ZJU@label@title:} 
+        {\bfseries\fangsong\zihao{3}\ZJU@label@title:}
         &
-        \bfseries\fangsong\zihao{-2} \ZJUunderline[260pt]{\ZJU@value@title} \\[3mm]
+        \bfseries\fangsong\zihao{-2} \ZJUunderline[300pt]{\ZJU@value@title} \\[3mm]
         &
         % 这个地方是做第二行标题的判断，如果标题一行写不下，有第二行则显示，否则不显示
         \ifx\ZJU@value@titletl\undefined
           \hfil
         \else
-          {\bfseries\fangsong\zihao{-2}\ZJUunderline[260pt]{\ZJU@value@titletl}}
+          {\bfseries\fangsong\zihao{-2}\ZJUunderline[300pt]{\ZJU@value@titletl}}
         \fi \\[4mm]
-        {\bfseries\fangsong\zihao{3}\ZJU@label@Etitle:} 
+        {\bfseries\fangsong\zihao{3}\ZJU@label@Etitle:}
         &
-        {\bf\zihao{-2}\ZJUunderline[260pt]{\ZJU@value@Etitle}}\\[3mm]
+        {\bf\zihao{-2}\ZJUunderline[300pt]{\ZJU@value@Etitle}}\\[3mm]
         &
         %同样是英文标题的多行判断，如果一行写不下，有第二行显示，否则不显示第二行
         \ifx\ZJU@value@Etitletl\undefined
           \hfil
         \else
-          {\bf\zihao{-2}\ZJUunderline[260pt]{\ZJU@value@Etitletl}}
+          {\bf\zihao{-2}\ZJUunderline[300pt]{\ZJU@value@Etitletl}}
         \fi\\
       \end{tabular}
 
       % 这个距离可以修改
-      \vspace{15mm}  
+      \vspace{15mm}
 
       % 左右两边字体不同，定义两个宏AB来简化代码，这个功能用到了array宏包
       \newcolumntype{A}{>{\songti}r<{}}
@@ -340,25 +340,25 @@ includehead, includefoot]{geometry}
       {\bfseries\songti\zihao{3}
       论文作者签名：
       \ifpdf
-          \ZJUunderline[120pt]{\includegraphics[width=100pt,height=45pt]{./Signature/sign_ch.pdf}}
+          \ZJUunderline[120pt]{}
       \else
-          \ZJUunderline[120pt]{\includegraphics[width=100pt,height=45pt]{./Signature/sign_ch.eps}}
+          \ZJUunderline[120pt]{}
       \fi
       {\bfseries\songti\zihao{3}\textcolor{white}{。}}\\
 
       %\hfil\\
       指导教师签名：}
       \ifpdf
-           \ZJUunderline[120pt]{\includegraphics[width=100pt,height=45pt]{./Signature/sign_ch_s.pdf}}
+           \ZJUunderline[120pt]{}
       \else
-           \ZJUunderline[120pt]{\includegraphics[width=100pt,height=45pt]{./Signature/sign_ch_s.eps}}
+           \ZJUunderline[120pt]{}
       \fi
       {\bfseries\songti\zihao{3}\textcolor{white}{。}}\\
- 
-            
+
+
       % 插入空白
       \vspace{15mm}
-      
+
       % 评阅人信息
       \newcolumntype{A}{>{\songti\zihao{4}}r}
       \newcolumntype{B}{>{\songti\zihao{4}}c}
@@ -369,7 +369,7 @@ includehead, includefoot]{geometry}
         评阅人4 & \ZJUunderline[260pt]{\ZJU@value@reviewersD}\\[2.2mm]
         评阅人5 & \ZJUunderline[260pt]{\ZJU@value@reviewersE}\\
       \end{tabular}
-    
+
       % 加一段空白
       \vspace{10mm}
 
@@ -412,7 +412,7 @@ includehead, includefoot]{geometry}
   \cleardoublepage
   \thispagestyle{empty}
   {
-    \linespread{1.3} 
+    \linespread{1.3}
     \begin{center}
       % 英文论文题目
       {\bf\zihao{-2}\ZJUunderline[340pt]{\ZJU@value@englishtitle}\\
@@ -440,20 +440,20 @@ includehead, includefoot]{geometry}
       % 作者英文签名
       {\bf\zihao{3}\hspace{1.7em}Author's signature:
       \ifpdf
-      \ZJUunderline[120pt]{\includegraphics[width=100pt,height=45pt]{./Signature/sign_en.pdf}}\\
+      \ZJUunderline[120pt]{}\\
       \else
-      \ZJUunderline[120pt]{\includegraphics[width=100pt,height=45pt]{./Signature/sign_en.eps}}\\
+      \ZJUunderline[120pt]{}\\
       \fi
       %\hfil\\
       % 导师英文签名
       Supervisor's signature:
       \ifpdf
-      \ZJUunderline[120pt]{\includegraphics[width=100pt,height=45pt]{./Signature/sign_en_s.pdf}}\\
+      \ZJUunderline[120pt]{}\\
       \else
-      \ZJUunderline[120pt]{\includegraphics[width=100pt,height=45pt]{./Signature/sign_en_s.eps}}\\
+      \ZJUunderline[120pt]{}\\
       \fi}
     \end{center}
-  
+
     % 加入一段空白
     \vspace{7mm}
 
@@ -485,7 +485,7 @@ includehead, includefoot]{geometry}
 
     % 加一段空白
     \vfill
-    % 答辩日期  
+    % 答辩日期
     {\hfill Date of oral defence:\ZJUunderline[150pt]{\ZJU@value@defenddate}\hspace{3em}}
   }
 }
@@ -563,7 +563,7 @@ includehead, includefoot]{geometry}
 \linespread{1.5}
 
 % 去掉目录中的空格字符
-\addtocontents{toc}{\let\string\CTEX@spaceChar\relax}
+\addtocontents{toc}{\let\string\quad\relax}
 
 % 勘误表
 \newenvironment{corrigenda}
