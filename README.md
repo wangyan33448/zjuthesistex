@@ -4,9 +4,9 @@ Tex templates for Zhejiang University Thesis
 从[google code](https://code.google.com/archive/p/zjuthesistex)中抢救过来，原文件和相关文档在[downloads](downloads) ，原[wiki](ProjectHome.md)也从另一个branch中拷了过来。
 
 ## How to use
-一般情况下，环境已经配好的情况下，修改[论文模版示例.tex](utfver/论文模版示例.tex)和[Chapters](utfver/Chapters)中的对应章节，引用添加在[thesisbib.bib](utfver/thesisbib.bib)，然后在[utfver](utfver)目录中运行`make`，就可以编出来 **论文模版示例.pdf**。
+一般情况下，环境已经配好的情况下，修改[论文模版示例.tex](school/论文模版示例.tex)和[Chapters](school/Chapters)中的对应章节，引用添加在[thesisbib.bib](school/thesisbib.bib)，然后在[school](school)目录中运行`make`，就可以编出来 **论文模版示例.pdf**。
 
-详细请参考[论文LaTeX版本快速指南V2.0.1.pdf](utfver/论文LaTeX版本快速指南V2.0.1.pdf).
+详细请参考[论文LaTeX版本快速指南V2.0.1.pdf](school/论文LaTeX版本快速指南V2.0.1.pdf).
 
 ## 相关链接
 以下链接可能需要浙大内网访问。现在（2018年1月）貌似还是最新版。因为我主要用来写博士论文，所以只关注了研究生的相关规定。
@@ -17,3 +17,4 @@ Tex templates for Zhejiang University Thesis
 4. [研究生院论文评审](http://grs.zju.edu.cn/redir.php?catalog_id=10039)
 5. [使用latex撰写博士,硕士学位论文](http://www.cnblogs.com/tsingke/p/6358396.html)
 6. [浙江大学计算机系本科生毕业论（设计）LaTeX 模板](http://blog.pluskid.org/?p=320)
+7. [浙江大学计算机学院与软件学院研究生学位论文模板](http://cspo.zju.edu.cn/redir.php?catalog_id=16115&object_id=28990)
